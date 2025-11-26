@@ -5,7 +5,7 @@ $sql = "UPDATE productos SET nombre=:n, precio=:p WERE id=;id";
 $stmt = $pdo->prepare($sql);
 $stmt->execute([
     'n' => $_POST['nombre'],
-    'n' => $_POST['precio'],
+    'p' => $_POST['precio'],
     'id' => $_POST['id']
 ]);
 
